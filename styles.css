@@ -1,0 +1,10 @@
+body {
+  background-color: #ffebd6;
+  height: 100%;
+}
+
+.page {
+  background-color: #adb394;
+  height: 80vh;
+  margin: 40px;
+}
