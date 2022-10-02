@@ -37,7 +37,7 @@ body {
   z-index: 5;
   width: 64px;
   height: 64px;
-  background-color: #fff;
+  background: linear-gradient(#d2c1a3 0%, #eed9d0 100%);
   border-radius: 50%;
   pointer-events: none;
   transition: background ease-in 10ms, box-shadow ease-in 150ms,
@@ -88,6 +88,6 @@ footer {
 }
 
 #box-general:hover ~ #circle {
-  background-color: transparent;
+  background: transparent;
   box-shadow: 0 0 0 1px #333;
 }
