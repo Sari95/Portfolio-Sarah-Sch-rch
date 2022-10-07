@@ -94,6 +94,7 @@ button:focus {
   color: #5f5747;
 }
 
+/*Evt. löschen
 .nav {
   width: 100%;
   height: 100px;
@@ -135,6 +136,23 @@ button:focus {
 
 .nav_link:hover {
   color: #5f5747;
+}
+*/
+
+.page_link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page_link.active {
+  border-top: 2px solid #adb394;
+  padding-top: 7px;
+  color: #5f5747;
+}
+
+.page_link:hover {
+  color: #5f5747;
+  font-size: 18px;
 }
 
 .larger_text_content {
