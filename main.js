@@ -68,3 +68,77 @@ TweenMax.to(".overlay", 2, {
   x: 100,
   ease: Expo.easeInOut,
 });
+
+//Change Background Color, Logo Color & Social Media Icons Color
+//Variable Body
+let body = document.getElementsByTagName("body")[0];
+body.style.backgroundColor = "#ffebd6";
+
+//Variable Logo
+let logo = document.getElementsByClassName("logo")[0];
+logo.style.backgroundColor = "#adb394";
+
+//Variable Icons
+let icon = document.getElementsByClassName("icon")[0];
+icon.style.color = "#adb394";
+
+//Function to change Background by scrolling
+function changebackground() {
+  let scroll1 = window.pageYOffset;
+  if (scroll1 < 500) {
+    // beige
+    body.style.backgroundColor = "#ffebd6";
+  } else if (scroll1 >= 500 && scroll1 < 1500) {
+    // light rosa
+    body.style.backgroundColor = "#f3d4c7";
+  } else if (scroll1 >= 1500 && scroll1 < 2000) {
+    // light red
+    body.style.backgroundColor = "#e8c9b7";
+  } else {
+    // light red
+    body.style.backgroundColor = "#e8c9b7";
+  }
+}
+
+//Function to change Logo-Background by scrolling
+function changelogo() {
+  let scroll2 = window.pageYOffset;
+  if (scroll2 < 500) {
+    // green
+    logo.style.backgroundColor = "#adb394";
+  } else if (scroll2 >= 500 && scroll2 < 1500) {
+    // yellow
+    logo.style.backgroundColor = "#EDC565";
+  } else if (scroll2 >= 1500 && scroll2 < 2000) {
+    // red
+    logo.style.backgroundColor = "#A34436";
+  } else {
+    // red
+    logo.style.backgroundColor = "#A34436";
+  }
+}
+
+//Function to change Icon-Color by scrolling
+function changeicon() {
+  let scroll3 = window.pageYOffset;
+  if (scroll3 < 500) {
+    // green
+    icon.style.color = "#adb394";
+  } else if (scroll3 >= 500 && scroll3 < 1500) {
+    // yellow
+    icon.style.color = "#EDC565";
+  } else if (scroll3 >= 1500 && scroll3 < 2000) {
+    // red
+    icon.style.color = "#A34436";
+  } else {
+    // red
+    icon.style.color = "#A34436";
+  }
+}
+
+// Trigger this function every time the user scrolls
+window.onscroll = function (event) {
+  changebackground();
+  changelogo();
+  changeicon();
+};

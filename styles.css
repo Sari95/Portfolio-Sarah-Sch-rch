@@ -12,6 +12,8 @@ body {
   font-family: "Gudea", sans-serif;
   overflow: scroll;
   overflow-x: hidden;
+  height: 315vh;
+  transition: background 1s ease;
 }
 
 /********* Reset ********/
@@ -46,7 +48,7 @@ button:focus {
   height: 100vh;
   background: rgb(0, 0, 0);
   z-index: 1;
-  background: linear-gradient(90deg, #adb394 50%, #9d8d74 50%, #eed9d0 100%);
+  background: linear-gradient(90deg, #adb394 35%, #ffebd6 55%, #e8c9b7 100%);
   top: 0%;
   display: flex;
   flex-direction: column;
@@ -71,7 +73,7 @@ button:focus {
 
 /********* Logo ********/
 .logo {
-  background-color: #adb394;
+  /*background-color: #adb394;*/
   width: 100%;
   height: 100px;
   display: flex;
@@ -124,7 +126,7 @@ button:focus {
 .wrapper {
   width: 100%;
   height: 100vh;
-  background-color: #ffebd6;
+  /*background-color: #ffebd6;*/
   /*background: url(Img/bg_img.jpeg);*/
   background-size: cover;
   background-position: center;
@@ -345,12 +347,12 @@ button:focus {
 .wrapper2 {
   width: 100%;
   height: 100vh;
-  background-color: #f3d4c7;
+  /*background-color: #f3d4c7;*/
   background-size: cover;
   background-position: center;
   display: flex;
   position: absolute;
-  top: 100%;
+  top: 100vh;
 }
 
 .larger_text_content2 {
@@ -480,12 +482,12 @@ button:focus {
 .wrapper3 {
   width: 100%;
   height: 100vh;
-  background-color: #e8c9b7;
+  /*background-color: #e8c9b7;*/
   background-size: cover;
   background-position: center;
   display: flex;
   position: absolute;
-  top: 200%;
+  top: 200vh;
 }
 
 .larger_text_content3 {
