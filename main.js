@@ -1,3 +1,4 @@
+//Mouse as a circle
 const circle = document.getElementById("circle");
 const circlStyle = circle.style;
 
@@ -8,6 +9,7 @@ document.addEventListener("mousemove", (e) => {
   });
 });
 
+//?
 const navlink = document.querySelectorAll(".nav_link");
 function linkAct() {
   navlink.forEach((n) => n.classList.remove("active"));

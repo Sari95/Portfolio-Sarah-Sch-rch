@@ -30,8 +30,8 @@ button:focus {
 #circle {
   position: fixed;
   z-index: 5;
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   background: transparent;
   box-shadow: 0 0 0 1px #333;
   /*background: linear-gradient(#d2c1a3 0%, #eed9d0 100%);*/
@@ -217,9 +217,9 @@ button:focus {
   padding: 2rem;
 }
 
-#green_box_circle ~ #circle {
-  background-color: #e6cf8b;
-  box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #ca9e03a6;
+/*Funktioniert noch nicht*/
+.green_box:hover ~ #circle {
+  background: linear-gradient(#fbc2eb 0%, #a6c1ee 100%);
 }
 
 .green_box_content {
@@ -370,7 +370,8 @@ button:focus {
   padding: 2rem;
 }
 
-#yellow_box_circle ~ #circle {
+/*Funktioniert noch nicht*/
+.yellow_box ~ #circle {
   background-color: #3c1eb0;
   box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #ca9e03a6;
 }
@@ -506,7 +507,8 @@ button:focus {
   padding: 2rem;
 }
 
-#red_box_circle ~ #circle {
+/*Funktioniert noch nicht*/
+.red_box ~ #circle {
   background-color: #3c1eb0;
   box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #ca9e03a6;
 }
