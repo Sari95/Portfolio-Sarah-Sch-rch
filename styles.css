@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 
 /********* Root ********/
 * {
@@ -9,7 +9,7 @@
 
 /********* Body ********/
 body {
-  font-family: "Gudea", sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow: scroll;
   overflow-x: hidden;
   height: 315vh;
@@ -201,7 +201,7 @@ button:focus {
 }
 
 .large_text {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -211,8 +211,8 @@ button:focus {
 
 .green_box {
   background-color: #adb394;
-  width: 260px;
-  height: 240px;
+  width: 300px;
+  height: 280px;
   margin-top: 1rem;
   padding: 2rem;
 }
@@ -278,10 +278,10 @@ button:focus {
 }
 
 .desc_content > p {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 230px;
   color: #5f5747;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -300,12 +300,12 @@ button:focus {
 .projects > span:nth-child(1) {
   color: #adb394;
   margin-bottom: 7px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .skills > span:nth-child(2),
 .projects > span:nth-child(2) {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: #5f5747;
   text-transform: capitalize;
@@ -335,11 +335,12 @@ button:focus {
 
 .slide > span:nth-child(1) {
   color: #ad1313;
+  font-size: 18px;
 }
 
 .slide > span:nth-child(2) {
   color: #adb394;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /*Page2*/
@@ -363,13 +364,13 @@ button:focus {
 
 .yellow_box {
   background-color: #edc565;
-  width: 260px;
-  height: 240px;
+  width: 300px;
+  height: 280px;
   margin-top: 1rem;
   padding: 2rem;
 }
 
-#red_box_circle ~ #circle {
+#yellow_box_circle ~ #circle {
   background-color: #3c1eb0;
   box-shadow: 0 0 0 0 transparent, inset 0em -0.3em 0.4em 0.2em #ca9e03a6;
 }
@@ -414,10 +415,10 @@ button:focus {
 }
 
 .desc_content2 > p {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 230px;
   color: #5f5747;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -436,12 +437,12 @@ button:focus {
 .myjourney > span:nth-child(1) {
   color: #edc565;
   margin-bottom: 7px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .skills2 > span:nth-child(2),
 .myjourney > span:nth-child(2) {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: #5f5747;
   text-transform: capitalize;
@@ -471,11 +472,12 @@ button:focus {
 
 .slide2 > span:nth-child(1) {
   color: #ad1313;
+  font-size: 18px;
 }
 
 .slide2 > span:nth-child(2) {
   color: #edc565;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /*TestTest*/
@@ -498,8 +500,8 @@ button:focus {
 
 .red_box {
   background-color: #a34436;
-  width: 260px;
-  height: 240px;
+  width: 300px;
+  height: 280px;
   margin-top: 1rem;
   padding: 2rem;
 }
@@ -549,10 +551,10 @@ button:focus {
 }
 
 .desc_content3 > p {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 230px;
   color: #5f5747;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
 }
@@ -571,12 +573,12 @@ button:focus {
 .myjourney3 > span:nth-child(1) {
   color: #a34436;
   margin-bottom: 7px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .projects3 > span:nth-child(2),
 .myjourney3 > span:nth-child(2) {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   color: #5f5747;
   text-transform: capitalize;
@@ -606,9 +608,10 @@ button:focus {
 
 .slide3 > span:nth-child(1) {
   color: #ad1313;
+  font-size: 18px;
 }
 
 .slide3 > span:nth-child(2) {
   color: #a34436;
-  font-size: 13px;
+  font-size: 15px;
 }
