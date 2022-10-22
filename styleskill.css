@@ -1,0 +1,244 @@
+/**Skillpage**/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+
+body {
+  background-color: #e8c9b7;
+  font-family: "Montserrat", sans-serif;
+  height: 120vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.page {
+  position: relative;
+  margin: 65px auto;
+  width: 55%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: 30px 8em 40px;
+  grid-auto-rows: minmax(auto, auto);
+  grid-template-areas:
+    "cross . ."
+    "title . ."
+    "skilltext skilltext skilltext"
+    ". container .";
+  /*display: flex;
+  flex-direction: column;*/
+  background-color: white;
+}
+
+h1 {
+  color: #ae3b3b;
+  font-size: 28px;
+  margin: 50px;
+  grid-area: title;
+}
+
+.cross {
+  color: #ae3b3b;
+  font-size: 50px;
+  margin-left: 5px;
+  grid-area: cross;
+}
+
+.skilltext {
+  grid-area: skilltext;
+  margin: 0 50px 0 50px;
+  font-size: 18px;
+}
+
+/*Circle*/
+#circle {
+  position: fixed;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  box-shadow: 0 0 0 1px #333;
+  /*background: linear-gradient(#d2c1a3 0%, #eed9d0 100%);*/
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background ease-in 10ms, box-shadow ease-in 150ms,
+    transform ease-in 150ms;
+  transform: translate3d(0, 0, 0);
+}
+
+/********* Left Menu ********/
+.left_menu {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+}
+
+/********* Logo ********/
+.logo {
+  background-color: #ae3b3b;
+  width: 100%;
+  height: 100px;
+  /*Wieso funktioniert das nicht? margin: 0;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/********* Social Icons ********/
+.social_icons_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.social_icons_list_item {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.social_icons_list_item i {
+  font-size: 14px;
+}
+
+.social_icons_list_item.circle {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9d8d74;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.icon {
+  font-weight: 400;
+  color: #ae3b3b;
+}
+
+.icon:hover {
+  color: #5f5747;
+}
+
+/********* Cubes ********/
+
+.container {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  grid-area: container;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  padding: 30px;
+  background-color: white;
+}
+
+.cube_face > i {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.scene > i {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black;
+  transition: bottom 0.3s;
+}
+
+.scene:hover > i {
+  transform: translate(-50%, 0) rotateY(360deg);
+  bottom: -10px;
+  transition: 0.3s 0.2s;
+}
+
+.cube {
+  transform: translateY(0) translateZ(-100px) rotateX(-20deg) rotateY(20deg);
+}
+
+.scene {
+  width: 50px;
+  height: 50px;
+  perspective: 500px;
+  margin-left: 8px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in;
+}
+
+.cube_shadow {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  filter: blur(10px);
+  bottom: -10px;
+  left: 0;
+  background-color: black;
+  transition: 0.3s ease-in;
+}
+
+.scene:hover .cube_shadow {
+  width: 60px;
+  height: 10px;
+  filter: blur(15px);
+  bottom: 0;
+  left: 10px;
+}
+
+.cube_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ae3b3b;
+  /*  Oder evt. mit dieser Farbe: background-color: #9c0c0c;*/
+  opacity: 1;
+  border: 1px solid black;
+}
+
+.cube_face--front {
+  transform: rotateY(0) translateZ(25px);
+}
+
+.cube_face--right {
+  transform: rotateY(90deg) translateZ(25px);
+  background-color: #992b2b;
+}
+
+.cube_face--back {
+  transform: rotateY(180deg) translateZ(25px);
+  background-color: #520303;
+}
+
+.cube_face--left {
+  transform: rotateY(-90deg) translateZ(25px);
+  background-color: #e63737;
+}
+
+.cube_face--top {
+  transform: rotateX(90deg) translateZ(25px);
+  background-color: #c21f1f;
+}
+
+.scene:hover .cube {
+  transform: translateY(-40px) translateZ(-100px) rotateX(30deg) rotateY(30deg);
+}
