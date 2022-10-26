@@ -4,27 +4,35 @@
 body {
   background-color: #e8c9b7;
   font-family: "Montserrat", sans-serif;
-  height: 120vh;
+  height: 100%;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+/********* Wrapper ********/
+.wrapper {
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 
 .page {
   position: relative;
   margin: 65px auto;
   width: 55%;
-  height: 80%;
+  height: 85%;
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 30px 8em 40px;
+  grid-template-rows: 5% 10% 30% 20% 20%;
   grid-auto-rows: minmax(auto, auto);
   grid-template-areas:
     "cross . ."
     "title . ."
+    ". container ."
     "skilltext skilltext skilltext"
-    ". container .";
-  /*display: flex;
-  flex-direction: column;*/
+    "skilllist skilllist skilllist";
   background-color: white;
 }
 
@@ -42,92 +50,36 @@ h1 {
   grid-area: cross;
 }
 
+.cross:hover {
+  color: #5f5747;
+  transform: rotateZ(45deg);
+  transform-origin: 10%;
+}
+
 .skilltext {
   grid-area: skilltext;
-  margin: 0 50px 0 50px;
-  font-size: 18px;
-}
-
-/*Circle*/
-#circle {
-  position: fixed;
-  z-index: 5;
-  width: 32px;
-  height: 32px;
-  background: transparent;
-  box-shadow: 0 0 0 1px #333;
-  /*background: linear-gradient(#d2c1a3 0%, #eed9d0 100%);*/
-  border-radius: 50%;
-  pointer-events: none;
-  transition: background ease-in 10ms, box-shadow ease-in 150ms,
-    transform ease-in 150ms;
-  transform: translate3d(0, 0, 0);
-}
-
-/********* Left Menu ********/
-.left_menu {
-  width: 100px;
-  height: 100%;
-  display: flex;
-  background-color: transparent;
-  flex-direction: column;
-  justify-content: space-between;
-  position: fixed;
-}
-
-/********* Logo ********/
-.logo {
-  background-color: #ae3b3b;
-  width: 100%;
-  height: 100px;
-  /*Wieso funktioniert das nicht? margin: 0;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/********* Social Icons ********/
-.social_icons_list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  padding: 10px;
-}
-
-.social_icons_list_item {
-  margin-bottom: 2rem;
-  cursor: pointer;
-}
-
-.social_icons_list_item i {
+  margin: 60px 50px 0 50px;
   font-size: 14px;
 }
 
-.social_icons_list_item.circle {
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #9d8d74;
-  border-radius: 50%;
-  padding-top: 5px;
+.skilllist {
+  grid-area: skilllist;
+  margin: 20px 50px 0 50px;
+  font-size: 14px;
 }
 
+/********* Left Menu ********/
+/********* Logo Skillpage ********/
+.logo {
+  background-color: #ae3b3b;
+}
+
+/********* Social Icons *********/
 .icon {
-  font-weight: 400;
   color: #ae3b3b;
 }
 
-.icon:hover {
-  color: #5f5747;
-}
-
 /********* Cubes ********/
-
 .container {
   position: relative;
   width: 260px;
