@@ -5,14 +5,14 @@ body {
   background-color: #ffebd6;
   font-family: "Montserrat", sans-serif;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
   overflow-x: hidden;
 }
 
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -25,12 +25,13 @@ body {
   height: 85%;
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 30px 8em 40px;
+  grid-template-rows: auto auto 1fr 1fr;
   grid-auto-rows: minmax(auto, auto);
   grid-template-areas:
     "cross . ."
     "title . ."
-    "journeytext journeytext journeytext";
+    "journeytext journeytext journeytext"
+    ". portraimyjourney .";
   background-color: white;
 }
 
@@ -58,6 +59,49 @@ h1 {
   grid-area: journeytext;
   margin: 0 50px 0 50px;
   font-size: 18px;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: inline;
+}
+
+.portraimyjourney {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  width: 300px;
+  height: 300px;
+  background-color: #adb394;
+  grid-area: portraimyjourney;
+  margin-bottom: 20px;
+}
+
+.portraittext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portraimyjourney .img-top {
+  position: absolute;
+  display: none;
+  z-index: 99;
+}
+
+.portraimyjourney:hover .img-top {
+  display: inline;
+}
+
+.portrait {
+  margin: 10px;
 }
 
 /********* Left Menu ********/

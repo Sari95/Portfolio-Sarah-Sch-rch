@@ -68,6 +68,14 @@ h1 {
   font-size: 14px;
 }
 
+li {
+  margin: 10px 0 0 30px;
+}
+
+li::marker {
+  color: #ae3b3b;
+}
+
 /********* Left Menu ********/
 /********* Logo Skillpage ********/
 .logo {
