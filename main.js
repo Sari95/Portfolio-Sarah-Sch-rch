@@ -108,10 +108,10 @@ function changelogo() {
   if (scroll2 < 500) {
     // green
     logo.style.backgroundColor = "#adb394";
-  } else if (scroll2 >= 500 && scroll2 < 1500) {
+  } else if (scroll2 >= 500 && scroll2 < 1100) {
     // yellow
     logo.style.backgroundColor = "#EDC565";
-  } else if (scroll2 >= 1500 && scroll2 < 2000) {
+  } else if (scroll2 >= 1100 && scroll2 < 2000) {
     // red
     logo.style.backgroundColor = "#A34436";
   } else {
@@ -126,10 +126,10 @@ function changeicon() {
   if (scroll3 < 500) {
     // green
     icon.style.color = "#adb394";
-  } else if (scroll3 >= 500 && scroll3 < 1500) {
+  } else if (scroll3 >= 500 && scroll3 < 1100) {
     // yellow
     icon.style.color = "#EDC565";
-  } else if (scroll3 >= 1500 && scroll3 < 2000) {
+  } else if (scroll3 >= 1100 && scroll3 < 2000) {
     // red
     icon.style.color = "#A34436";
   } else {
