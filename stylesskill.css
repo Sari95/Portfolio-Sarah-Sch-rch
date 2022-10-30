@@ -12,60 +12,83 @@ body {
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 150vh;
+  height: 120vh;
   background-size: cover;
   background-position: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page {
   position: relative;
-  margin: 65px auto;
-  width: 55%;
-  height: 85%;
+  margin: 25px auto 25px auto;
+  width: 75vw;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/*
+.page {
+  position: relative;
+  margin: 65px auto 65px auto;
+  width: 75vw;
+  height: 140vh;
+  --auto-grid-min-size: 16rem;
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 5% 10% 30% 20% 20%;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+  grid-template-rows: auto auto 1fr 0.5fr 0.5fr;
   grid-auto-rows: minmax(auto, auto);
   grid-template-areas:
     "cross . ."
     "title . ."
     ". container ."
-    "skilltext skilltext skilltext"
-    "skilllist skilllist skilllist";
+    "skilltext skilltext ."
+    "skilllist skilllist .";
   background-color: white;
-}
+}*/
 
 h1 {
   color: #ae3b3b;
-  font-size: 28px;
+  font-size: 1.5em;
   margin: 50px;
   grid-area: title;
 }
 
 .cross {
   color: #ae3b3b;
-  font-size: 50px;
+  font-size: 3em;
   margin-left: 5px;
   grid-area: cross;
+  position: absolute;
+  transition: transform 0.25s, opacity 0.25s;
 }
 
 .cross:hover {
   color: #5f5747;
-  transform: rotateZ(45deg);
-  transform-origin: 10%;
+  /*transform: rotateZ(45deg);*/
+  transform: rotate(90deg);
 }
 
 .skilltext {
   grid-area: skilltext;
   margin: 60px 50px 0 50px;
-  font-size: 14px;
+  font-size: 0.8em;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .skilllist {
   grid-area: skilllist;
   margin: 20px 50px 0 50px;
-  font-size: 14px;
+  font-size: 0.8em;
+  word-wrap: break-word;
 }
 
 li {
@@ -89,9 +112,10 @@ li::marker {
 
 /********* Cubes ********/
 .container {
-  position: relative;
+  /*position: relative;*/
   width: 260px;
   height: 260px;
+  margin: 0 auto;
   grid-area: container;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -201,4 +225,20 @@ li::marker {
 
 .scene:hover .cube {
   transform: translateY(-40px) translateZ(-100px) rotateX(30deg) rotateY(30deg);
+}
+
+/*Funktioniert nicht*/
+/*Mobile 768px*/
+@media (max-widht: 768px) {
+  body {
+    background-color: black;
+  }
+
+  .wrapper {
+    height: 160vh;
+  }
+  .page {
+    margin-top: 100px;
+    height: 150vh;
+  }
 }

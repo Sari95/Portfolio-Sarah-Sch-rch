@@ -47,12 +47,13 @@ h1 {
   font-size: 50px;
   margin-left: 5px;
   grid-area: cross;
+  position: absolute;
+  transition: transform 0.25s, opacity 0.25s;
 }
 
 .cross:hover {
   color: #5f5747;
-  transform: rotateZ(45deg);
-  transform-origin: 10%;
+  transform: rotate(90deg);
 }
 
 .journeytext {
