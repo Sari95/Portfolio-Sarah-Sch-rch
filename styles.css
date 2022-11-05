@@ -569,7 +569,6 @@ button:focus {
   font-size: 15px;
 }
 
-/*Funktioniert nicht*/
 /*Mobile 768px*/
 @media (max-width: 768px) {
   /*Wrapper1*/

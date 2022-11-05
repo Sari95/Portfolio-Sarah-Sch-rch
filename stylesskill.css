@@ -227,22 +227,6 @@ li::marker {
   transform: translateY(-40px) translateZ(-100px) rotateX(30deg) rotateY(30deg);
 }
 
-/*Funktioniert nicht*/
-/*Mobile 768px*/
-@media (max-widht: 768px) {
-  body {
-    background-color: black;
-  }
-
-  .wrapper {
-    height: 160vh;
-  }
-  .page {
-    margin-top: 100px;
-    height: 150vh;
-  }
-}
-
 /*Mobile 768px*/
 @media (max-width: 768px) {
   /********* Wrapper ********/

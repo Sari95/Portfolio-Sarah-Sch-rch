@@ -1,6 +1,11 @@
 /**MyJourneypage**/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #ffebd6;
   font-family: "Montserrat", sans-serif;
@@ -12,12 +17,25 @@ body {
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 150vh;
+  height: 300vh;
   background-size: cover;
   background-position: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.page {
+  position: relative;
+  margin: 25px auto 25px auto;
+  width: 75vw;
+  height: 250vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/*
 .page {
   position: relative;
   margin: 65px auto;
@@ -30,17 +48,10 @@ body {
   grid-template-areas:
     "cross . ."
     "title . ."
-    "journeytext journeytext journeytext"
-    ". portraimyjourney .";
+    ". timeline ."
+    ". portraitmyjourney .";
   background-color: white;
-}
-
-h1 {
-  color: #adb394;
-  font-size: 28px;
-  margin: 50px;
-  grid-area: title;
-}
+}*/
 
 .cross {
   color: #adb394;
@@ -56,13 +67,22 @@ h1 {
   transform: rotate(90deg);
 }
 
+/*Vermutlich löschen
 .journeytext {
   grid-area: journeytext;
   margin: 0 50px 0 50px;
   font-size: 18px;
-}
+}*/
 
 img {
+  width: 150px;
+  height: auto;
+  /*border-radius: 50%;*/
+  margin-top: 10px;
+  display: inline;
+}
+
+.portraitimg {
   width: 150px;
   height: auto;
   border-radius: 50%;
@@ -70,7 +90,7 @@ img {
   display: inline;
 }
 
-.portraimyjourney {
+.portraitmyjourney {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -78,10 +98,12 @@ img {
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
   width: 300px;
-  height: 300px;
+  height: 400px;
   background-color: #adb394;
-  grid-area: portraimyjourney;
+  grid-area: portraitmyjourney;
   margin-bottom: 20px;
+  overflow: hidden;
+  margin: 20px auto;
 }
 
 .portraittext {
@@ -91,7 +113,7 @@ img {
   align-items: center;
 }
 
-.portraimyjourney .img-top {
+.portraimyjourney .portraitimg .img-top {
   position: absolute;
   display: none;
   z-index: 99;
@@ -114,4 +136,219 @@ img {
 /********* Social Icons *********/
 .icon {
   color: #adb394;
+}
+
+a {
+  color: #adb394;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover,
+a.selected {
+  color: #adb394;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  text-align: center;
+  color: #adb394;
+  /*text-shadow: #000 1px 1px 2px;*/
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 50px;
+}
+
+h2 {
+  font-size: 14px;
+}
+.sociales {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#timeline {
+  grid-area: timeline;
+  width: 500px;
+  height: 750px;
+  /*overflow: hidden;*/
+  margin: 40px auto;
+  position: relative;
+  background: url("img/dot.png") 3px top repeat-y;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+}
+#dates {
+  width: 100px;
+  height: 600px;
+  /*overflow: hidden;*/
+  float: left;
+}
+#dates li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 24px;
+  padding-left: 10px;
+  background: url("img/biggerdot.png") left center no-repeat;
+}
+#dates a {
+  line-height: 38px;
+  padding-bottom: 10px;
+}
+#dates .selected {
+  font-size: 38px;
+}
+
+#dates a:hover {
+  font-size: 36px;
+}
+
+#issues {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  float: left;
+}
+#issues li {
+  max-width: 300px; /*width: 400px;*/
+  height: 600px;
+  list-style: none;
+  text-align: center; /* add*/
+}
+#issues li.selected img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+#issues li img {
+  float: left;
+  width: 200px; /* add*/
+  margin: 10px 30px 10px 50px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE 6 & 7 */
+  zoom: 1;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: scale(0.7, 0.7);
+  -moz-transform: scale(0.7, 0.7);
+  -o-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+}
+#issues li h1 {
+  color: #adb394;
+  font-size: 24px;
+  text-align: center;
+  /*text-shadow: #000 1px 1px 2px;*/
+}
+#issues li p {
+  font-size: 14px;
+  margin: 10px 20px;
+  font-weight: normal;
+  line-height: 32px;
+  /*text-shadow: #000 1px 1px 2px;*/
+}
+
+#grad_top,
+#grad_bottom {
+  width: 500px;
+  height: 80px;
+  position: absolute;
+}
+#grad_top {
+  top: 0;
+  /*background: url("http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png")
+    repeat-x;*/
+}
+#grad_bottom {
+  bottom: 0;
+  /*background: url("http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png")
+    repeat-x;*/
+}
+
+#next,
+#prev {
+  position: absolute;
+  left: 45%; /* left: 55%;*/
+  font-size: 70px;
+  width: 38px;
+  height: 22px;
+  background-position: 0 -44px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+#next:hover,
+#prev:hover {
+  background-position: 0 0;
+}
+#next {
+  bottom: 0;
+  background-image: url("img/angles-right-solid.svg");
+  transform: rotate(90deg);
+}
+#prev {
+  top: 0;
+  background-image: url("img/angles-left-solid.svg");
+  transform: rotate(90deg);
+}
+#next.disabled,
+#prev.disabled {
+  opacity: 0.2;
+}
+
+/*Mobile 768px*/
+@media (max-width: 768px) {
+  /********* Wrapper ********/
+  .wrapper {
+    height: 220vh;
+  }
+
+  .page {
+    margin: 0 auto 25px 110px;
+    width: 65vw;
+    height: 150vh;
+  }
+  #timeline {
+    width: 200px;
+    height: 450px;
+  }
+
+  .portraitimg {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: inline;
+  }
+
+  .portraitmyjourney {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+    width: 200px;
+    height: 250px;
+    background-color: #adb394;
+    grid-area: portraitmyjourney;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+  }
 }
