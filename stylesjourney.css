@@ -82,28 +82,38 @@ img {
   display: inline;
 }
 
-.portraitimg {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  margin-top: 10px;
-  display: inline;
-}
-
-.portraitmyjourney {
+/*PortraitAboutMe*/
+.tc-container {
+  width: 500px;
+  height: 700px;
+  margin-top: 1.5em;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
   width: 300px;
   height: 400px;
   background-color: #adb394;
-  grid-area: portraitmyjourney;
   margin-bottom: 20px;
-  overflow: hidden;
   margin: 20px auto;
+}
+
+.tc-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.top-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.top-img:hover {
+  opacity: 1;
 }
 
 .portraittext {
@@ -113,18 +123,9 @@ img {
   align-items: center;
 }
 
-.portraimyjourney .portraitimg .img-top {
-  position: absolute;
-  display: none;
-  z-index: 99;
-}
-
-.portraimyjourney:hover .img-top {
-  display: inline;
-}
-
 .portrait {
   margin: 10px;
+  text-align: center;
 }
 
 /********* Left Menu ********/
@@ -185,6 +186,11 @@ h2 {
   background: url("img/dot.png") 3px top repeat-y;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
+
+button {
+  display: none;
+}
+
 #dates {
   width: 100px;
   height: 600px;
@@ -315,17 +321,49 @@ h2 {
 @media (max-width: 768px) {
   /********* Wrapper ********/
   .wrapper {
-    height: 220vh;
+    height: 120vh;
   }
 
   .page {
     margin: 0 auto 25px 110px;
     width: 65vw;
-    height: 150vh;
+    height: 80vh;
   }
   #timeline {
     width: 200px;
     height: 450px;
+    display: none;
+  }
+
+  .buttonCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    background-color: white;
+    color: #333;
+    border: 2px solid #adb394;
+    display: inline;
+    width: 60%;
+    padding: 12px 30px;
+    margin: 20px 0 60px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  button {
+    transition-duration: 0.4s;
+  }
+
+  button:hover {
+    background-color: #adb394;
+    color: white;
+  }
+
+  .fa-download {
+    margin-right: 5px;
   }
 
   .portraitimg {
