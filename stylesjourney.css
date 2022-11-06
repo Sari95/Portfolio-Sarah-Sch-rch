@@ -17,7 +17,7 @@ body {
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 300vh;
+  height: 400vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,7 +29,7 @@ body {
   position: relative;
   margin: 25px auto 25px auto;
   width: 75vw;
-  height: 250vh;
+  height: 380vh;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -84,26 +84,32 @@ img {
 
 /*PortraitAboutMe*/
 .tc-container {
-  width: 500px;
-  height: 700px;
+  width: 65%;
+  height: auto;
   margin-top: 1.5em;
   position: relative;
   display: flex;
+  align-items: center;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
-  width: 300px;
-  height: 400px;
   background-color: #adb394;
   margin-bottom: 20px;
   margin: 20px auto;
+}
+
+.centerimg {
+  width: 30%;
+  height: auto;
 }
 
 .tc-container img {
   width: 100%;
   height: auto;
   border-radius: 50%;
+  margin: 1.5em 0;
 }
 
+/*
 .top-img {
   position: absolute;
   left: 0;
@@ -115,7 +121,7 @@ img {
 .top-img:hover {
   opacity: 1;
 }
-
+*/
 .portraittext {
   display: flex;
   flex-direction: column;
@@ -124,7 +130,7 @@ img {
 }
 
 .portrait {
-  margin: 10px;
+  margin: 40px;
   text-align: center;
 }
 
@@ -169,7 +175,8 @@ h1 {
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 20px;
+  margin: 1.5em 0;
 }
 .sociales {
   text-align: center;
@@ -179,7 +186,7 @@ h2 {
 #timeline {
   grid-area: timeline;
   width: 500px;
-  height: 750px;
+  height: 1200px;
   /*overflow: hidden;*/
   margin: 40px auto;
   position: relative;
@@ -187,8 +194,39 @@ h2 {
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
-button {
+.buttonCV {
   display: none;
+}
+
+.buttonCVDesktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: white;
+  color: #333;
+  border: 2px solid #adb394;
+  display: inline;
+  width: 60%;
+  padding: 12px 30px;
+  margin: 20px 0 60px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #adb394;
+  color: white;
+}
+
+.fa-download {
+  margin-right: 5px;
 }
 
 #dates {
@@ -210,7 +248,8 @@ button {
   line-height: 38px;
   padding-bottom: 10px;
 }
-#dates .selected {
+#dates .selected,
+#dates .focus {
   font-size: 38px;
 }
 
@@ -321,17 +360,40 @@ button {
 @media (max-width: 768px) {
   /********* Wrapper ********/
   .wrapper {
-    height: 120vh;
+    height: 240vh;
   }
 
   .page {
     margin: 0 auto 25px 110px;
     width: 65vw;
-    height: 80vh;
+    height: 100vh;
   }
   #timeline {
-    width: 200px;
-    height: 450px;
+    display: none;
+  }
+
+  /*PortraitAboutMe*/
+  .tc-container {
+    width: 75%;
+    height: auto;
+    margin-top: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+    background-color: #adb394;
+    margin-bottom: 20px;
+    margin: 20px auto;
+  }
+
+  .tc-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 1.5em 0;
+  }
+
+  .buttonCVDesktop {
     display: none;
   }
 
@@ -364,29 +426,5 @@ button {
 
   .fa-download {
     margin-right: 5px;
-  }
-
-  .portraitimg {
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 10px;
-    display: inline;
-  }
-
-  .portraitmyjourney {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
-    width: 200px;
-    height: 250px;
-    background-color: #adb394;
-    grid-area: portraitmyjourney;
-    margin-bottom: 20px;
-    overflow: hidden;
-    margin: 20px auto;
   }
 }
