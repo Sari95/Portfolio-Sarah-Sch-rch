@@ -17,7 +17,7 @@ body {
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 400vh;
+  height: 240vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,7 +29,7 @@ body {
   position: relative;
   margin: 25px auto 25px auto;
   width: 75vw;
-  height: 380vh;
+  height: 220vh;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -84,7 +84,7 @@ img {
 
 /*PortraitAboutMe*/
 .tc-container {
-  width: 65%;
+  width: 45%;
   height: auto;
   margin-top: 1.5em;
   position: relative;
@@ -186,12 +186,16 @@ h2 {
 #timeline {
   grid-area: timeline;
   width: 500px;
-  height: 1200px;
+  height: 700px;
   /*overflow: hidden;*/
   margin: 40px auto;
   position: relative;
   background: url("img/dot.png") 3px top repeat-y;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+}
+
+.title {
+  color: #adb394;
 }
 
 .buttonCV {
