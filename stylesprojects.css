@@ -17,7 +17,7 @@ body {
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 200vh;
+  height: 240vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,7 +29,7 @@ body {
   position: relative;
   margin: 25px auto 25px auto;
   width: 75vw;
-  height: 160vh;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -60,6 +60,11 @@ h1 {
   grid-area: title;
 }
 
+h2 {
+  color: #edc565;
+  font-size: 1.2em;
+}
+
 .cross {
   color: #edc565;
   font-size: 50px;
@@ -77,13 +82,24 @@ h1 {
 .projectstext {
   grid-area: projectstext;
   margin: 0 50px 0 50px;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .projects {
   position: relative;
+  margin: 25px auto;
+  width: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*
+.projects {
+  position: relative;
   margin: 65px auto;
-  width: 55%;
+  width: 75%;
   height: 85%;
   grid-area: projects;
   display: grid;
@@ -92,28 +108,23 @@ h1 {
   grid-auto-rows: minmax(auto, auto);
   grid-gap: 20px;
   grid-template-areas:
-    "project1 ."
+    "project1 project2 project3"
     ". . .";
-}
+}*/
 
 .project1 {
-  width: 100%;
+  width: 40%;
   height: auto;
   margin-top: 1.5em;
   position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
-  background-color: #adb394;
-  margin-bottom: 20px;
-  margin: 20px auto;
+  margin: 1.5em 0;
 }
 
 .project1 img {
   width: 100%;
   height: auto;
   margin: 1.5em 0;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .top-img {
@@ -128,6 +139,34 @@ h1 {
   opacity: 1;
 }
 
+.project2 {
+  width: 40%;
+  height: auto;
+  position: relative;
+  margin: 1.5em 0;
+}
+
+.project2 img {
+  width: 100%;
+  height: auto;
+  margin: 1.5em 0;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+}
+
+.project3 {
+  width: 40%;
+  height: auto;
+  position: relative;
+  margin: 1.5em 0;
+}
+
+.project3 img {
+  width: 100%;
+  height: auto;
+  margin: 1.5em 0;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+}
+
 /********* Left Menu ********/
 /********* Logo Skillpage ********/
 .logo {
@@ -137,4 +176,42 @@ h1 {
 /********* Social Icons *********/
 .icon {
   color: #edc565;
+}
+
+/*Mobile 768px*/
+@media (max-width: 768px) {
+  /********* Wrapper ********/
+  .wrapper {
+    height: 200vh;
+  }
+
+  .page {
+    margin: 0 auto 25px 110px;
+    width: 65vw;
+    height: 160vh;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  .projectstext {
+    font-size: 0.6em;
+  }
+
+  .project1 {
+    width: 60%;
+  }
+
+  .project2 {
+    width: 60%;
+  }
+
+  .project3 {
+    width: 60%;
+  }
 }
