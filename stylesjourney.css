@@ -134,6 +134,10 @@ img {
   text-align: center;
 }
 
+.contact {
+  margin-top: 0;
+}
+
 /********* Left Menu ********/
 /********* Logo Skillpage ********/
 .logo {
@@ -208,11 +212,17 @@ h2 {
   align-items: center;
 }
 
+.buttoncontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
 button {
   background-color: white;
   color: #333;
   border: 2px solid #adb394;
-  display: inline;
   width: 60%;
   padding: 12px 30px;
   margin: 20px 0 60px 0;
