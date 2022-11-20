@@ -7,6 +7,7 @@ body {
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
+  color: #fff;
 }
 
 /********* Wrapper ********/
@@ -27,7 +28,7 @@ body {
   height: 110vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #a34436;
 }
 
 /*
@@ -55,14 +56,13 @@ body {
 }*/
 
 h1 {
-  color: #ae3b3b;
   font-size: 1.5em;
   margin: 50px;
   grid-area: title;
 }
 
 .cross {
-  color: #ae3b3b;
+  color: #e8c9b7;
   font-size: 3em;
   margin-left: 5px;
   grid-area: cross;
@@ -96,25 +96,25 @@ li {
 }
 
 li::marker {
-  color: #ae3b3b;
+  color: #a34436;
 }
 
 /********* Left Menu ********/
 /********* Logo Skillpage ********/
 .logo {
-  background-color: #ae3b3b;
+  background-color: #a34436;
 }
 
 /********* Social Icons *********/
 .icon {
-  color: #ae3b3b;
+  color: #a34436;
 }
 
 /********* Cubes ********/
 .container {
   /*position: relative;*/
-  width: 260px;
-  height: 260px;
+  width: 360px;
+  height: 360px;
   margin: 0 auto;
   grid-area: container;
   display: grid;
@@ -122,7 +122,8 @@ li::marker {
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
   padding: 30px;
-  background-color: white;
+  background-color: #f4f0eb;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .cube_face > i {

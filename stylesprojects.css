@@ -12,6 +12,7 @@ body {
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
+  color: #fff;
 }
 
 /********* Wrapper ********/
@@ -32,7 +33,7 @@ body {
   height: 200vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #edc565;
 }
 
 /*
@@ -54,7 +55,6 @@ body {
 }*/
 
 h1 {
-  color: #edc565;
   font-size: 1.5em;
   margin: 50px;
   grid-area: title;
@@ -63,10 +63,12 @@ h1 {
 h2 {
   color: #edc565;
   font-size: 1.2em;
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
 }
 
 .cross {
-  color: #edc565;
+  color: #f3d4c7;
   font-size: 50px;
   margin-left: 5px;
   grid-area: cross;
@@ -118,13 +120,14 @@ h2 {
   margin-top: 1.5em;
   position: relative;
   margin: 1.5em 0;
+  background-color: #f4f0eb;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project1 img {
   width: 100%;
   height: auto;
   margin: 1.5em 0;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .top-img {
@@ -140,31 +143,33 @@ h2 {
 }
 
 .project2 {
+  background-color: #f4f0eb;
   width: 40%;
   height: auto;
   position: relative;
   margin: 1.5em 0;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project2 img {
   width: 100%;
   height: auto;
   margin: 1.5em 0;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project3 {
+  background-color: #f4f0eb;
   width: 40%;
   height: auto;
   position: relative;
   margin: 1.5em 0;
+  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project3 img {
   width: 100%;
   height: auto;
   margin: 1.5em 0;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 /********* Left Menu ********/

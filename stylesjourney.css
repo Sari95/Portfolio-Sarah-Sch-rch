@@ -12,12 +12,13 @@ body {
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
+  color: #fff;
 }
 
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 260vh;
+  height: 300vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,10 +30,10 @@ body {
   position: relative;
   margin: 25px auto 25px auto;
   width: 75vw;
-  height: 240vh;
+  height: 280vh;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #adb394;
 }
 
 /*
@@ -54,7 +55,7 @@ body {
 }*/
 
 .cross {
-  color: #adb394;
+  color: #ffebd6;
   font-size: 50px;
   margin-left: 5px;
   grid-area: cross;
@@ -85,16 +86,17 @@ img {
 /*PortraitAboutMe*/
 .tc-container {
   width: 45%;
-  height: 55vh;
+  height: 85vh;
   margin-top: 1.5em;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
-  background-color: #adb394;
-  margin-bottom: 20px;
+  background-color: #f4f0eb;
+  margin-bottom: 2em;
   margin: 20px auto;
+  color: #5f5747;
 }
 
 .centerimg {
@@ -169,7 +171,6 @@ h4,
 h5,
 h6 {
   text-align: center;
-  color: #adb394;
   /*text-shadow: #000 1px 1px 2px;*/
   margin-bottom: 5px;
 }
@@ -190,12 +191,14 @@ h2 {
 #timeline {
   grid-area: timeline;
   width: 500px;
-  height: 700px;
+  height: 800px;
   /*overflow: hidden;*/
   margin: 40px auto;
   position: relative;
   background: url("img/dot.png") 3px top repeat-y;
   box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  background-color: #f4f0eb;
+  color: #5f5747;
 }
 
 .title {
@@ -207,8 +210,8 @@ h2 {
 }
 
 button {
-  background-color: #fff;
-  color: #333;
+  background-color: #f4f0eb;
+  color: #5f5747;
   border: 2px solid #adb394;
   border-radius: 50px;
   width: 80%;
@@ -227,7 +230,7 @@ button {
 
 button:hover {
   background-color: #adb394;
-  color: white;
+  color: #fff;
 }
 
 .fa-download {
@@ -387,7 +390,7 @@ button:hover {
   .page {
     margin: 0 auto 25px 110px;
     width: 65vw;
-    height: 100vh;
+    height: 200vh;
   }
   #timeline {
     display: none;
@@ -396,13 +399,12 @@ button:hover {
   /*PortraitAboutMe*/
   .tc-container {
     width: 75%;
-    height: auto;
+    height: 80vh;
     margin-top: 1.5em;
     position: relative;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
-    background-color: #adb394;
     margin-bottom: 20px;
     margin: 20px auto;
   }
@@ -425,7 +427,7 @@ button:hover {
   }
 
   button {
-    background-color: white;
+    background-color: #f4f0eb;
     color: #333;
     border: 2px solid #adb394;
     display: inline;
