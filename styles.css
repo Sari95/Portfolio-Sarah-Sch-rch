@@ -33,7 +33,7 @@ button:focus {
   z-index: 5;
   width: 8px;
   height: 8px;
-  background: #adb394;
+  background: #5f5747;
   box-shadow: 0 0 0 1px rgb(97, 95, 95);
   border-radius: 50%;
   pointer-events: none;
