@@ -91,14 +91,14 @@ function changebackground() {
     // beige
     body.style.backgroundColor = "#ffebd6";
   } else if (scroll1 >= 500 && scroll1 < 1500) {
-    // light rosa
-    body.style.backgroundColor = "#f3d4c7";
+    // light
+    body.style.backgroundColor = "#f4f0eb";
   } else if (scroll1 >= 1500 && scroll1 < 2000) {
-    // light red
-    body.style.backgroundColor = "#e8c9b7";
+    // beige
+    body.style.backgroundColor = "#ffebd6";
   } else {
-    // light red
-    body.style.backgroundColor = "#e8c9b7";
+    // beige
+    body.style.backgroundColor = "#ffebd6";
   }
 }
 
