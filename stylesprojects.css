@@ -28,7 +28,7 @@ body {
 
 .page {
   position: relative;
-  margin: 25px auto 25px auto;
+  margin: 1.5em auto 1.5em auto;
   width: 75vw;
   height: 200vh;
   display: flex;
@@ -36,29 +36,10 @@ body {
   background-color: #333;
 }
 
-/*
-.page {
-  position: relative;
-  margin: 65px auto;
-  width: 55%;
-  height: 85%;
-  display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 30px 8em 40px;
-  grid-auto-rows: minmax(auto, auto);
-  grid-template-areas:
-    "cross . ."
-    "title . ."
-    "projectstext projectstext projectstext"
-    "projects projects projects";
-  background-color: white;
-}*/
-
 h1 {
   color: #edc565;
   font-size: 2em;
-  margin: 50px;
-  grid-area: title;
+  margin: 2em 0 1em 0;
   text-align: center;
 }
 
@@ -74,9 +55,8 @@ h2 {
 
 .cross {
   color: #edc565;
-  font-size: 50px;
-  margin-left: 5px;
-  grid-area: cross;
+  font-size: 3em;
+  margin-left: 0.2em;
   position: absolute;
   transition: transform 0.25s, opacity 0.25s;
 }
@@ -87,14 +67,13 @@ h2 {
 }
 
 .projectstext {
-  grid-area: projectstext;
-  margin: 0 50px 0 50px;
+  margin: 0 2em 0 2em;
   font-size: 1em;
 }
 
 .projects {
   position: relative;
-  margin: 25px auto;
+  margin: 1.5em auto;
   width: auto;
   height: 70vh;
   display: flex;
@@ -102,30 +81,13 @@ h2 {
   align-items: center;
 }
 
-/*
-.projects {
-  position: relative;
-  margin: 65px auto;
-  width: 75%;
-  height: 85%;
-  grid-area: projects;
-  display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: 30px 8em 40px;
-  grid-auto-rows: minmax(auto, auto);
-  grid-gap: 20px;
-  grid-template-areas:
-    "project1 project2 project3"
-    ". . .";
-}*/
-
 .project1 {
   width: 40%;
   height: auto;
   position: relative;
   margin: 1.5em 0;
   background-color: #f4f0eb;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project1 img {
@@ -152,7 +114,7 @@ h2 {
   height: auto;
   position: relative;
   margin: 1.5em 0;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project2 img {
@@ -167,7 +129,7 @@ h2 {
   height: auto;
   position: relative;
   margin: 1.5em 0;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
 .project3 img {
@@ -195,7 +157,7 @@ h2 {
   }
 
   .page {
-    margin: 0 auto 25px 110px;
+    margin: 0 auto 1.5em 6.8em;
     width: 65vw;
     height: 160vh;
   }
