@@ -7,12 +7,12 @@
 }
 
 body {
-  background-color: #f3d4c7;
+  background-color: #242424;
   font-family: "Montserrat", sans-serif;
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
-  color: #fff;
+  color: #fafafa;
 }
 
 /********* Wrapper ********/
@@ -33,7 +33,7 @@ body {
   height: 200vh;
   display: flex;
   flex-direction: column;
-  background-color: #edc565;
+  background-color: #333;
 }
 
 /*
@@ -55,20 +55,25 @@ body {
 }*/
 
 h1 {
-  font-size: 1.5em;
+  color: #edc565;
+  font-size: 2em;
   margin: 50px;
   grid-area: title;
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }
 
 h2 {
-  color: #edc565;
+  color: #5f5747;
   font-size: 1.2em;
-  margin-left: 0.8em;
-  margin-bottom: 0.8em;
+  margin: 0.8em 0.8em 0.8em;
 }
 
 .cross {
-  color: #f3d4c7;
+  color: #edc565;
   font-size: 50px;
   margin-left: 5px;
   grid-area: cross;
@@ -117,7 +122,6 @@ h2 {
 .project1 {
   width: 40%;
   height: auto;
-  margin-top: 1.5em;
   position: relative;
   margin: 1.5em 0;
   background-color: #f4f0eb;
@@ -127,7 +131,7 @@ h2 {
 .project1 img {
   width: 100%;
   height: auto;
-  margin: 1.5em 0;
+  margin-bottom: 1.5em 0;
 }
 
 .top-img {
@@ -154,7 +158,7 @@ h2 {
 .project2 img {
   width: 100%;
   height: auto;
-  margin: 1.5em 0;
+  margin-bottom: 1.5em;
 }
 
 .project3 {
@@ -169,7 +173,7 @@ h2 {
 .project3 img {
   width: 100%;
   height: auto;
-  margin: 1.5em 0;
+  margin-bottom: 1.5em;
 }
 
 /********* Left Menu ********/

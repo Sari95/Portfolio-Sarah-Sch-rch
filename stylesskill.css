@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
 
 body {
-  background-color: #e8c9b7;
+  background-color: #242424;
   font-family: "Montserrat", sans-serif;
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
-  color: #fff;
+  color: #f4f0eb;
 }
 
 /********* Wrapper ********/
@@ -28,7 +28,7 @@ body {
   height: 110vh;
   display: flex;
   flex-direction: column;
-  background-color: #a34436;
+  background-color: #333333;
 }
 
 /*
@@ -56,13 +56,14 @@ body {
 }*/
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 50px;
-  grid-area: title;
+  text-align: center;
+  color: #a34436;
 }
 
 .cross {
-  color: #e8c9b7;
+  color: #a34436;
   font-size: 3em;
   margin-left: 5px;
   grid-area: cross;
@@ -76,16 +77,21 @@ h1 {
   transform: rotate(90deg);
 }
 
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .skilltext {
-  grid-area: skilltext;
   margin: 60px 50px 0 50px;
   font-size: 0.8em;
   word-wrap: break-word;
   word-break: break-word;
+  display: block;
 }
 
 .skilllist {
-  grid-area: skilllist;
   margin: 20px 50px 0 50px;
   font-size: 0.8em;
   word-wrap: break-word;

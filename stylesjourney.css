@@ -7,12 +7,12 @@
 }
 
 body {
-  background-color: #ffebd6;
+  background-color: #242424;
   font-family: "Montserrat", sans-serif;
   height: 100%;
   overflow: scroll;
   overflow-x: hidden;
-  color: #fff;
+  color: #adb394;
 }
 
 /********* Wrapper ********/
@@ -33,7 +33,7 @@ body {
   height: 280vh;
   display: flex;
   flex-direction: column;
-  background-color: #adb394;
+  background-color: #333;
 }
 
 /*
@@ -55,7 +55,7 @@ body {
 }*/
 
 .cross {
-  color: #ffebd6;
+  color: #adb394;
   font-size: 50px;
   margin-left: 5px;
   grid-area: cross;
@@ -175,7 +175,7 @@ h6 {
   margin-bottom: 5px;
 }
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 50px;
 }
 
@@ -183,6 +183,11 @@ h2 {
   font-size: 20px;
   margin: 1.5em 0;
 }
+
+h3 {
+  color: #adb394;
+}
+
 .sociales {
   text-align: center;
   margin-bottom: 20px;
