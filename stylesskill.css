@@ -223,8 +223,9 @@ li::marker {
   }
   /********* Cubes ********/
   .container {
-    width: 15em;
-    height: 15em;
+    width: 18em;
+    height: 18em;
     margin: 0 auto;
+    transform: scale(0.5, 0.5);
   }
 }
