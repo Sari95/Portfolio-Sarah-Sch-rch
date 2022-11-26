@@ -28,7 +28,7 @@ body {
 
 .page {
   position: relative;
-  margin: 25px auto 25px auto;
+  margin: 1.5em auto 1.5em auto;
   width: 75vw;
   height: 280vh;
   display: flex;
@@ -36,28 +36,10 @@ body {
   background-color: #333;
 }
 
-/*
-.page {
-  position: relative;
-  margin: 65px auto;
-  width: 55%;
-  height: 85%;
-  display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  grid-template-rows: auto auto 1fr 1fr;
-  grid-auto-rows: minmax(auto, auto);
-  grid-template-areas:
-    "cross . ."
-    "title . ."
-    ". timeline ."
-    ". portraitmyjourney .";
-  background-color: white;
-}*/
-
 .cross {
   color: #adb394;
-  font-size: 50px;
-  margin-left: 5px;
+  font-size: 3em;
+  margin-left: 0.2em;
   grid-area: cross;
   position: absolute;
   transition: transform 0.25s, opacity 0.25s;
@@ -68,18 +50,11 @@ body {
   transform: rotate(90deg);
 }
 
-/*Vermutlich löschen
-.journeytext {
-  grid-area: journeytext;
-  margin: 0 50px 0 50px;
-  font-size: 18px;
-}*/
-
 img {
-  width: 50px;
+  width: 3.1em;
   height: auto;
   /*border-radius: 50%;*/
-  margin-top: 10px;
+  margin-top: 0.625em;
   display: inline;
 }
 
@@ -92,10 +67,10 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
   background-color: #f4f0eb;
   margin-bottom: 2em;
-  margin: 20px auto;
+  margin: 1.25em auto;
   color: #5f5747;
 }
 
@@ -124,6 +99,7 @@ img {
   opacity: 1;
 }
 */
+
 .portraittext {
   display: flex;
   flex-direction: column;
@@ -132,7 +108,7 @@ img {
 }
 
 .portrait {
-  margin: 40px;
+  margin: 2.5em;
   text-align: center;
 }
 
@@ -171,37 +147,37 @@ h4,
 h5,
 h6 {
   text-align: center;
-  /*text-shadow: #000 1px 1px 2px;*/
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 h1 {
   font-size: 2em;
-  margin: 50px;
+  margin: 3.1em;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1.25em;
   margin: 1.5em 0;
 }
 
 h3 {
   color: #adb394;
+  text-align: center;
 }
 
 .sociales {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 #timeline {
   grid-area: timeline;
-  width: 500px;
-  height: 800px;
+  width: 31.25em;
+  height: 50em;
   /*overflow: hidden;*/
-  margin: 40px auto;
+  margin: 2.5em auto;
   position: relative;
-  background: url("img/dot.png") 3px top repeat-y;
-  box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
+  background: url("img/dot.png") 0.2em top repeat-y;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
   background-color: #f4f0eb;
   color: #5f5747;
 }
@@ -217,14 +193,14 @@ h3 {
 button {
   background-color: #f4f0eb;
   color: #5f5747;
-  border: 2px solid #adb394;
-  border-radius: 50px;
+  border: 0.125em solid #adb394;
+  border-radius: 3.125em;
   width: 80%;
-  height: 40px;
-  padding: 10px 10px;
-  margin: 20px 0 20px 0;
+  height: 2.5em;
+  padding: 0.625em 0.625em;
+  margin: 1.25em 0 1.25em 0;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 0.75em;
   text-align: center;
   justify-content: center;
 }
@@ -239,15 +215,15 @@ button:hover {
 }
 
 .fa-download {
-  margin-right: 5px;
+  margin-right: 0.3em;
 }
 
 .buttonCVDesktop {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 20px;
+  width: 100%;
+  height: 1.25em;
 }
 
 .buttoncontact {
@@ -255,51 +231,51 @@ button:hover {
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 20px;
+  height: 1.25em;
 }
 
 .fa-envelope {
   color: #5f5747;
-  margin-right: 5px;
+  margin-right: 0.3em;
 }
 
 #dates {
-  width: 100px;
-  height: 600px;
+  width: 6.25em;
+  height: 37.5em;
   /*overflow: hidden;*/
   float: left;
 }
 #dates li {
   list-style: none;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  font-size: 24px;
-  padding-left: 10px;
+  width: 6.25em;
+  height: 6.25em;
+  line-height: 6.25em;
+  font-size: 1.5em;
+  padding-left: 0.625em;
   background: url("img/biggerdot.png") left center no-repeat;
 }
 #dates a {
-  line-height: 38px;
-  padding-bottom: 10px;
+  line-height: 2.4em;
+  padding-bottom: 0.6em;
 }
 #dates .selected,
 #dates .focus {
-  font-size: 38px;
+  font-size: 2.4em;
 }
 
 #dates a:hover {
-  font-size: 36px;
+  font-size: 2.25em;
 }
 
 #issues {
-  width: 400px;
-  height: 600px;
+  width: 25em;
+  height: 37.5em;
   overflow: hidden;
   float: left;
 }
 #issues li {
-  max-width: 300px; /*width: 400px;*/
-  height: 600px;
+  max-width: 18.75em; /*width: 400px;*/
+  height: 37.5em;
   list-style: none;
   text-align: center; /* add*/
 }
@@ -312,8 +288,8 @@ button:hover {
 }
 #issues li img {
   float: left;
-  width: 200px; /* add*/
-  margin: 10px 30px 10px 50px;
+  width: 12.5em; /* add*/
+  margin: 0.625em 1.875em 0.625em 31.2em;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE 6 & 7 */
   zoom: 1;
@@ -330,22 +306,20 @@ button:hover {
 }
 #issues li h1 {
   color: #adb394;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
-  /*text-shadow: #000 1px 1px 2px;*/
 }
 #issues li p {
-  font-size: 14px;
-  margin: 10px 20px;
+  font-size: 0.8em;
+  margin: 0.6em 1.25em;
   font-weight: normal;
-  line-height: 32px;
-  /*text-shadow: #000 1px 1px 2px;*/
+  line-height: 2em;
 }
 
 #grad_top,
 #grad_bottom {
-  width: 500px;
-  height: 80px;
+  width: 31.25em;
+  height: 5em;
   position: absolute;
 }
 #grad_top {
@@ -363,9 +337,9 @@ button:hover {
 #prev {
   position: absolute;
   left: 45%; /* left: 55%;*/
-  font-size: 70px;
-  width: 38px;
-  height: 22px;
+  font-size: 4.3em;
+  width: 2.3em;
+  height: 1.3em;
   background-position: 0 -44px;
   background-repeat: no-repeat;
   text-indent: -9999px;
@@ -398,7 +372,7 @@ button:hover {
   }
 
   .page {
-    margin: 0 auto 25px 110px;
+    margin: 0 auto 1.5em 6.8em;
     width: 65vw;
     height: 200vh;
   }
@@ -414,9 +388,9 @@ button:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0.2, 0.2, 0.2, 1);
-    margin-bottom: 20px;
-    margin: 20px auto;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
+    margin-bottom: 1.25em;
+    margin: 1.25em auto;
   }
 
   .tc-container img {
@@ -439,13 +413,14 @@ button:hover {
   button {
     background-color: #f4f0eb;
     color: #333;
-    border: 2px solid #adb394;
+    border: 0.125em solid #adb394;
     display: inline;
-    width: 60%;
-    padding: 12px 30px;
-    margin: 20px 0 60px 0;
+    width: 80%;
+    height: auto;
+    padding: 0.35em 1.4em;
+    margin: 1.25em 0 3.75em 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 0.9em;
   }
 
   button {
@@ -458,6 +433,6 @@ button:hover {
   }
 
   .fa-download {
-    margin-right: 5px;
+    margin-right: 0.3em;
   }
 }
