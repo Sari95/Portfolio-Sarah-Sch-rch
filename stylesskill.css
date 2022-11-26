@@ -54,6 +54,7 @@ h1 {
 
 .skills {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -61,15 +62,16 @@ h1 {
 .skilltext {
   margin: 3.75em 3.1em 0 3.1em;
   font-size: 0.8em;
+  max-width: 40%;
   word-wrap: break-word;
   word-break: break-word;
-  display: block;
 }
 
 .skilllist {
   margin: 1.25em 3.1em 0 3.1em;
   font-size: 0.8em;
   word-wrap: break-word;
+  max-width: 40%;
 }
 
 li {
