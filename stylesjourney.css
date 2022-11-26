@@ -286,13 +286,16 @@ button:hover {
   -ms-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
+
 #issues li img {
   float: left;
   width: 12.5em; /* add*/
-  margin: 0.625em 1.875em 0.625em 31.2em;
+  height: auto;
+  /*
+  margin: 0.625em 1.875em 0.625em 1.875em;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE 6 & 7 */
-  zoom: 1;
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE 6 & 7 */
+  /*zoom: 1;
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
@@ -302,8 +305,9 @@ button:hover {
   -moz-transform: scale(0.7, 0.7);
   -o-transform: scale(0.7, 0.7);
   -ms-transform: scale(0.7, 0.7);
-  transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);*/
 }
+
 #issues li h1 {
   color: #adb394;
   font-size: 1.5em;
@@ -329,39 +333,9 @@ button:hover {
 }
 #grad_bottom {
   bottom: 0;
+  margin-top: 10em;
   /*background: url("http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png")
     repeat-x;*/
-}
-
-#next,
-#prev {
-  position: absolute;
-  left: 45%; /* left: 55%;*/
-  font-size: 4.3em;
-  width: 2.3em;
-  height: 1.3em;
-  background-position: 0 -44px;
-  background-repeat: no-repeat;
-  text-indent: -9999px;
-  overflow: hidden;
-}
-#next:hover,
-#prev:hover {
-  background-position: 0 0;
-}
-#next {
-  bottom: 0;
-  background-image: url("img/angles-right-solid.svg");
-  transform: rotate(90deg);
-}
-#prev {
-  top: 0;
-  background-image: url("img/angles-left-solid.svg");
-  transform: rotate(90deg);
-}
-#next.disabled,
-#prev.disabled {
-  opacity: 0.2;
 }
 
 /*Mobile 768px*/
