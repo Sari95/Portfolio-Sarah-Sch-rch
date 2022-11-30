@@ -50,7 +50,7 @@ body {
   transform: rotate(90deg);
 }
 
-img {
+.portraitimg {
   width: 3.1em;
   height: auto;
   /*border-radius: 50%;*/
@@ -79,7 +79,7 @@ img {
   height: auto;
 }
 
-.tc-container img {
+.tc-container .portraitimg {
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -169,23 +169,6 @@ h3 {
   margin-bottom: 1.25em;
 }
 
-#timeline {
-  grid-area: timeline;
-  width: 31.25em;
-  height: 50em;
-  /*overflow: hidden;*/
-  margin: 2.5em auto;
-  position: relative;
-  background: url("img/dot.png") 0.2em top repeat-y;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
-  background-color: #f4f0eb;
-  color: #5f5747;
-}
-
-.title {
-  color: #adb394;
-}
-
 .buttonCV {
   display: none;
 }
@@ -239,116 +222,234 @@ button:hover {
   margin-right: 0.3em;
 }
 
-#dates {
-  width: 6.25em;
-  height: 37.5em;
-  /*overflow: hidden;*/
-  float: left;
-}
-#dates li {
-  list-style: none;
-  width: 6.25em;
-  height: 6.25em;
-  line-height: 6.25em;
-  font-size: 1.5em;
-  padding-left: 0.625em;
-  background: url("img/biggerdot.png") left center no-repeat;
-}
-#dates a {
-  line-height: 2.4em;
-  padding-bottom: 0.6em;
-}
-#dates .selected,
-#dates .focus {
-  font-size: 2.4em;
+/*Code*/
+#cv {
+  padding-top: 1em;
+  position: relative;
+  align-items: center;
 }
 
-#dates a:hover {
-  font-size: 2.25em;
+.timeline {
+  margin-top: 2em;
+  gap: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+  margin-bottom: 2em;
+  border-left: 4px solid var(--color-accent);
+  position: relative;
 }
 
-#issues {
-  width: 25em;
-  height: 37.5em;
-  overflow: hidden;
-  float: left;
-}
-#issues li {
-  max-width: 18.75em; /*width: 400px;*/
-  height: 37.5em;
-  list-style: none;
-  text-align: center; /* add*/
-}
-#issues li.selected img {
-  -webkit-transform: scale(1.1, 1.1);
-  -moz-transform: scale(1.1, 1.1);
-  -o-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
-
-#issues li img {
-  float: left;
-  width: 12.5em; /* add*/
-  height: auto;
-  /*
-  margin: 0.625em 1.875em 0.625em 1.875em;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */
-  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF); /* IE 6 & 7 */
-  /*zoom: 1;
-  -webkit-transition: all 2s ease-in-out;
-  -moz-transition: all 2s ease-in-out;
-  -o-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-  -webkit-transform: scale(0.7, 0.7);
-  -moz-transform: scale(0.7, 0.7);
-  -o-transform: scale(0.7, 0.7);
-  -ms-transform: scale(0.7, 0.7);
-  transform: scale(0.7, 0.7);*/
-}
-
-#issues li h1 {
-  color: #adb394;
-  font-size: 1.5em;
-  text-align: center;
-}
-#issues li p {
-  font-size: 0.8em;
-  margin: 0.6em 1.25em;
-  font-weight: normal;
-  line-height: 2em;
-}
-
-#grad_top,
-#grad_bottom {
-  width: 31.25em;
-  height: 5em;
+.timeline:before {
   position: absolute;
+  top: -1.3em;
+  left: -1.5em;
+  color: var(--color-accent);
+  content: "Heute";
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
 }
-#grad_top {
-  top: 0;
-  /*background: url("http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png")
-    repeat-x;*/
+
+.timeline:after {
+  position: absolute;
+  bottom: -1.3em;
+  left: -1.4em;
+  content: "2015";
+  color: var(--color-accent);
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
 }
-#grad_bottom {
+
+.timeline-entry {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 1.2em;
+  /*border: 3px solid var(--color-accent);;*/
+}
+
+.timeline-entry::after {
+  content: "";
+  position: absolute;
+  left: -2em;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: var(--color-accent);
+  border: 5px solid var(--color-background-left);
+  border-radius: 10em;
+}
+
+.tl-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.location-dates {
+  display: flex;
+  font-style: italic;
+  font-size: 14px;
+  border-bottom: 1px solid var(--color-accent);
+  margin-bottom: 6px;
+  padding-bottom: 2px;
+}
+
+.spacer {
+  margin: 0 3px;
+  width: 1px;
+  background: var(--color-accent);
+}
+
+.tl-location {
+}
+
+.tl-dates {
+}
+
+.tl-description {
+  font-size: 15px;
+}
+
+.tl-description ul {
+  margin: 3px 0 0 0;
+  padding: 0 0 0 2em;
+  font-size: 0.9em;
+}
+
+/********* Cubes ********/
+.container {
+  /*position: relative;*/
+  width: 3.5em;
+  height: 3.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.875em;
+  background-color: #f4f0eb;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
+}
+
+.cube_face > .cubeimg {
+  font-size: 1.563em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.scene > .cubeimg {
+  font-size: 1.875em;
+  position: absolute;
   bottom: 0;
-  margin-top: 10em;
-  /*background: url("http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png")
-    repeat-x;*/
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black;
+  transition: bottom 0.3s;
 }
+
+.scene:hover > .cubeimg {
+  transform: translate(-50%, 0) rotateY(360deg);
+  bottom: -10px;
+  transition: 0.3s 0.2s;
+}
+
+.cube {
+  transform: translateY(0) translateZ(-100px) rotateX(-20deg) rotateY(20deg);
+}
+
+.scene {
+  width: 3.125em;
+  height: 3.125em;
+  perspective: 31.25em;
+  margin-left: 0.5em;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in;
+}
+
+.cube_shadow {
+  display: block;
+  position: absolute;
+  width: 3.125em;
+  height: 2.5em;
+  filter: blur(0.625em);
+  bottom: -10px;
+  left: 0;
+  background-color: black;
+  transition: 0.3s ease-in;
+}
+
+.scene:hover .cube_shadow {
+  width: 3.75em;
+  height: 0.625em;
+  filter: blur(0.938em);
+  bottom: 0;
+  left: 0.625em;
+}
+
+.cube_face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ae3b3b;
+  /*  Oder evt. mit dieser Farbe: background-color: #9c0c0c;*/
+  opacity: 1;
+  border: 0.063em solid black;
+}
+
+.cube_face--front {
+  transform: rotateY(0) translateZ(1.563em);
+}
+
+.cube_face--right {
+  transform: rotateY(90deg) translateZ(1.563em);
+  background-color: #992b2b;
+}
+
+.cube_face--back {
+  transform: rotateY(180deg) translateZ(1.563em);
+  background-color: #520303;
+}
+
+.cube_face--left {
+  transform: rotateY(-90deg) translateZ(1.563em);
+  background-color: #e63737;
+}
+
+.cube_face--top {
+  transform: rotateX(90deg) translateZ(1.563em);
+  background-color: #c21f1f;
+}
+
+.scene:hover .cube {
+  transform: translateY(-40px) translateZ(-100px) rotateX(30deg) rotateY(30deg);
+}
+
+.cubeimg {
+  width: 40%;
+  height: auto;
+}
+
+/*Code*/
 
 /*Mobile 768px*/
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   /********* Wrapper ********/
   .wrapper {
-    height: 240vh;
+    height: 290vh;
   }
 
   .page {
     margin: 0 auto 1.5em 6.8em;
     width: 65vw;
-    height: 200vh;
+    height: 250vh;
   }
   #timeline {
     display: none;
@@ -367,7 +468,7 @@ button:hover {
     margin: 1.25em auto;
   }
 
-  .tc-container img {
+  .tc-container .portraitimg {
     width: 100%;
     height: auto;
     border-radius: 50%;
@@ -408,5 +509,55 @@ button:hover {
 
   .fa-download {
     margin-right: 0.3em;
+  }
+
+  #cv {
+    justify-content: flex-start;
+  }
+
+  .timeline {
+    width: 36em;
+    flex: 1 1 auto;
+    max-height: 300vh;
+    gap: 0;
+    justify-content: space-around;
+    background: linear-gradient(#5f5747, #5f5747) no-repeat center / 4px 100%;
+    border: none;
+  }
+
+  .timeline::before {
+    left: calc(50% - 2.5ch);
+  }
+
+  .timeline::after {
+    left: calc(50% - 2ch);
+  }
+
+  .timeline-entry {
+    width: 16em;
+    left: 0;
+    flex: 0 1 auto;
+  }
+
+  .timeline-entry.right {
+    align-self: flex-end;
+  }
+
+  .timeline-entry.left {
+    align-self: flex-start;
+  }
+
+  .timeline-entry::after {
+    border: 5px solid var(--color-background-middle);
+  }
+
+  .timeline-entry.right::after {
+    left: unset;
+    right: calc(100% + 2em - 10px);
+  }
+
+  .timeline-entry.left::after {
+    left: calc(100% + 2em - 10px);
+    background: var(--color-accent);
   }
 }
