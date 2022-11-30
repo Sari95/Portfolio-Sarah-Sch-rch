@@ -215,13 +215,13 @@ li::marker {
 @media (max-width: 768px) {
   /********* Wrapper ********/
   .wrapper {
-    height: 220vh;
+    height: 260vh;
   }
 
   .page {
     margin: 0 auto 1.5em 6.8em;
     width: 65vw;
-    height: 150vh;
+    height: 190vh;
   }
   /********* Cubes ********/
   .container {
@@ -229,5 +229,27 @@ li::marker {
     height: 18em;
     margin: 0 auto;
     transform: scale(0.5, 0.5);
+  }
+
+  .skilltext {
+    font-size: 0.8em;
+  }
+
+  .skilllist {
+    font-size: 0.8em;
+  }
+}
+
+/*NestHub 1024px*/
+@media (max-width: 1024px) {
+  /********* Wrapper ********/
+  .wrapper {
+    height: 300vh;
+  }
+
+  .page {
+    margin: 0 auto 1.5em 6.8em;
+    width: 65vw;
+    height: 230vh;
   }
 }
