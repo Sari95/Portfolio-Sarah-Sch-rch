@@ -2,6 +2,8 @@
 
 This portfolio was created through a term project in the Web Engineering module at the Bern University of Applied Sciences 2022. Discover my most important skills and my latest projects in my portfolio.
 
+![Cover Portfolio Sarah Schürch](https://user-images.githubusercontent.com/64635914/205147584-d42aac8f-42c2-434e-a4b6-b214e32c5d54.png)
+
 Quellen
 Circle Cursor
 https://dev.to/mattmarquise/how-to-create-a-custom-circular-cursor-for-your-website-4i7p
