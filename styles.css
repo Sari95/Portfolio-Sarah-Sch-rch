@@ -17,7 +17,7 @@ body {
   cursor: none;
 }
 
-/********* Reset ********/
+/********* Rest ********/
 button {
   background-color: transparent;
   border: none;
@@ -568,6 +568,8 @@ button:focus {
   color: #a34436;
   font-size: 0.93em;
 }
+
+/********* Media Queries ********/
 
 /*Mobile 768px*/
 @media (max-width: 768px) {

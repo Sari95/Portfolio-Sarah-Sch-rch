@@ -1,3 +1,4 @@
+// Variable Weather
 let weather = {
   apiKey: "5cd9012c1ce33c61dde3e9950d2d83bc",
   fetchWeather: function (city) {

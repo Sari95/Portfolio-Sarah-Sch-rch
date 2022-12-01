@@ -15,7 +15,7 @@ body {
   color: #fafafa;
 }
 
-/********* Wrapper ********/
+/********* Content ********/
 .wrapper {
   width: 100%;
   height: 290vh;
@@ -90,12 +90,14 @@ h2 {
   box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
+/********* img muss 100% & top-img muss absolute sein, damit Hover-Effekt funktioniert ********/
 .project1 img {
   width: 100%;
   height: auto;
   margin-bottom: 1.5em 0;
 }
 
+/********* top-img gilt für alle Projekte ********/
 .top-img {
   position: absolute;
   left: 0;
@@ -117,6 +119,7 @@ h2 {
   box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
+/********* img muss 100% & top-img muss absolute sein, damit Hover-Effekt funktioniert ********/
 .project2 img {
   width: 100%;
   height: auto;
@@ -132,6 +135,7 @@ h2 {
   box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
 }
 
+/********* img muss 100% & top-img muss absolute sein, damit Hover-Effekt funktioniert ********/
 .project3 img {
   width: 100%;
   height: auto;
@@ -165,6 +169,7 @@ h2 {
 }
 
 
+/********* Media Queries ********/
 /*Surface Pro 912px*/
 @media (max-width: 912px) {
   .wrapper {
@@ -191,7 +196,6 @@ h2 {
 
 /*Mobile 768px*/
 @media (max-width: 768px) {
-  /********* Wrapper ********/
   .wrapper {
     height: 200vh;
   }

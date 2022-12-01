@@ -16,7 +16,7 @@ body {
   color: #adb394;
 }
 
-/********* Wrapper ********/
+/********* Content ********/
 .wrapper {
   width: 100%;
   height: 400vh;
@@ -49,14 +49,6 @@ body {
 .cross:hover {
   color: #5f5747;
   transform: rotate(90deg);
-}
-
-.portraitimg {
-  width: 3.1em;
-  height: auto;
-  /*border-radius: 50%;*/
-  margin-top: 0.625em;
-  display: inline;
 }
 
 /*PortraitAboutMe*/
@@ -112,6 +104,7 @@ body {
   color: #adb394;
 }
 
+/********* Links *********/
 a {
   color: #adb394;
   text-decoration: none;
@@ -146,15 +139,12 @@ h3 {
   text-align: center;
 }
 
-.sociales {
-  text-align: center;
-  margin-bottom: 1.25em;
-}
-
+/*Ist zurzeit ausgeblendet
 .buttonCV {
   display: none;
-}
+}*/
 
+/********* Button allgemein *********/
 button {
   background-color: #f4f0eb;
   color: #5f5747;
@@ -183,14 +173,7 @@ button:hover {
   margin-right: 0.3em;
 }
 
-.buttonCVDesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1.25em;
-}
-
+/********* Button spezifisch für Kontakt, falls CV-Button eingeblendet wird *********/
 .buttoncontact {
   display: flex;
   justify-content: center;
@@ -205,7 +188,7 @@ button:hover {
   margin-right: 0.3em;
 }
 
-/*Code*/
+/********* Timeline-Code mit Work Experience and Qualifications *********/
 #cv {
   padding-top: 1em;
   position: relative;
@@ -318,12 +301,6 @@ button:hover {
   background: var(--color-accent);
 }
 
-.tl-location {
-}
-
-.tl-dates {
-}
-
 .tl-description {
   font-size: 15px;
 }
@@ -335,6 +312,7 @@ button:hover {
 }
 
 /********* Cubes ********/
+/*Damit die Cubes wie gewünscht angezeigt werden, muss  box-sizing: unset sein*/
 .container {
   /*position: relative;*/
   width: 3.5em;
@@ -416,8 +394,7 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #adb394 /*#ae3b3b*/;
-  /*  Oder evt. mit dieser Farbe: background-color: #9c0c0c;*/
+  background-color: #adb394;
   opacity: 1;
   border: 0.063em solid black;
 }
@@ -428,22 +405,22 @@ button:hover {
 
 .cube_face--right {
   transform: rotateY(90deg) translateZ(1.563em);
-  background-color: #737762 /*#992b2b*/;
+  background-color: #737762;
 }
 
 .cube_face--back {
   transform: rotateY(180deg) translateZ(1.563em);
-  background-color: #292b23 /*#520303*/;
+  background-color: #292b23;
 }
 
 .cube_face--left {
   transform: rotateY(-90deg) translateZ(1.563em);
-  background-color: #a9b47c /*#e63737*/;
+  background-color: #a9b47c;
 }
 
 .cube_face--top {
   transform: rotateX(90deg) translateZ(1.563em);
-  background-color: #a0b15b /*#c21f1f*/;
+  background-color: #a0b15b;
 }
 
 .scene:hover .cube {
@@ -455,7 +432,7 @@ button:hover {
   height: auto;
 }
 
-/*Code*/
+/********* Media Queries ********/
 
 /*Surface Pro 912*/
 @media (max-width: 912px) {
@@ -509,7 +486,6 @@ button:hover {
 
 /*Mobile 768px*/
 @media (max-width: 768px) {
-  /********* Wrapper ********/
   .wrapper {
     height: 430vh;
   }
@@ -523,7 +499,6 @@ button:hover {
     display: none;
   }
 
-  /*PortraitAboutMe*/
   .tc-container {
     width: 75%;
     height: 80vh;

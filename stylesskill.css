@@ -10,7 +10,7 @@ body {
   color: #f4f0eb;
 }
 
-/********* Wrapper ********/
+/********* Content der Seite ********/
 .wrapper {
   width: 100%;
   height: 120vh;
@@ -82,7 +82,7 @@ li::marker {
   color: #a34436;
 }
 
-/********* Left Menu ********/
+/********* Left Menu: Alles wird von styles.css übernommen, ausser Farbe Rot ********/
 /********* Logo Skillpage ********/
 .logo {
   background-color: #a34436;
@@ -99,7 +99,6 @@ li::marker {
   width: 22.5em;
   height: 22.5em;
   margin: 0 auto;
-  grid-area: container;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -210,6 +209,8 @@ li::marker {
 .scene:hover .cube {
   transform: translateY(-40px) translateZ(-100px) rotateX(30deg) rotateY(30deg);
 }
+
+/********* Media Queries ********/
 
 /*NestHub 1024px*/
 @media (max-width: 1024px) {
