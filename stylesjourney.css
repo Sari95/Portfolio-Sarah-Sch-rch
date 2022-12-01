@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: unset;
 }
 
 body {
@@ -398,7 +399,7 @@ button:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ae3b3b;
+  background-color: #adb394 /*#ae3b3b*/;
   /*  Oder evt. mit dieser Farbe: background-color: #9c0c0c;*/
   opacity: 1;
   border: 0.063em solid black;
@@ -410,22 +411,22 @@ button:hover {
 
 .cube_face--right {
   transform: rotateY(90deg) translateZ(1.563em);
-  background-color: #992b2b;
+  background-color: #737762 /*#992b2b*/;
 }
 
 .cube_face--back {
   transform: rotateY(180deg) translateZ(1.563em);
-  background-color: #520303;
+  background-color: #292b23 /*#520303*/;
 }
 
 .cube_face--left {
   transform: rotateY(-90deg) translateZ(1.563em);
-  background-color: #e63737;
+  background-color: #a9b47c /*#e63737*/;
 }
 
 .cube_face--top {
   transform: rotateX(90deg) translateZ(1.563em);
-  background-color: #c21f1f;
+  background-color: #a0b15b /*#c21f1f*/;
 }
 
 .scene:hover .cube {
@@ -433,7 +434,7 @@ button:hover {
 }
 
 .cubeimg {
-  width: 40%;
+  width: 80%;
   height: auto;
 }
 
