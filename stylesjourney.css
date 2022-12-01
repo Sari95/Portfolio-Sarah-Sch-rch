@@ -19,7 +19,7 @@ body {
 /********* Wrapper ********/
 .wrapper {
   width: 100%;
-  height: 300vh;
+  height: 400vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -31,7 +31,7 @@ body {
   position: relative;
   margin: 1.5em auto 1.5em auto;
   width: 75vw;
-  height: 280vh;
+  height: 380vh;
   display: flex;
   flex-direction: column;
   background-color: #333;
@@ -63,15 +63,13 @@ body {
 .tc-container {
   width: 45%;
   height: 85vh;
-  margin-top: 1.5em;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
   background-color: #f4f0eb;
-  margin-bottom: 2em;
-  margin: 1.25em auto;
+  margin: 1em auto;
   color: #5f5747;
 }
 
@@ -87,20 +85,6 @@ body {
   margin: 1.5em 0;
 }
 
-/*
-.top-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: all 0.7s ease;
-}
-
-.top-img:hover {
-  opacity: 1;
-}
-*/
-
 .portraittext {
   display: flex;
   flex-direction: column;
@@ -109,7 +93,7 @@ body {
 }
 
 .portrait {
-  margin: 2.5em;
+  margin: 1.5em;
   text-align: center;
 }
 
@@ -147,12 +131,9 @@ h2,
 h4,
 h5,
 h6 {
-  text-align: center;
-  margin-bottom: 0.3em;
-}
-h1 {
   font-size: 2em;
-  margin: 3.1em;
+  margin: 2em 0 1em 0;
+  text-align: center;
 }
 
 h2 {
@@ -214,8 +195,9 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 40%;
   height: 1.25em;
+  margin: 1.5em auto;
 }
 
 .fa-envelope {
@@ -227,7 +209,6 @@ button:hover {
 #cv {
   padding-top: 1em;
   position: relative;
-  align-items: center;
 }
 
 .timeline {
@@ -239,6 +220,13 @@ button:hover {
   margin-bottom: 2em;
   border-left: 4px solid var(--color-accent);
   position: relative;
+  width: 100% /*36em*/;
+  flex: 1 1 auto;
+  max-height: 300vh;
+  gap: 0;
+  justify-content: space-around;
+  background: linear-gradient(#5f5747, #5f5747) no-repeat center / 4px 100%;
+  border: none;
 }
 
 .timeline:before {
@@ -249,6 +237,7 @@ button:hover {
   content: "Heute";
   font-weight: bold;
   font-family: Helvetica, sans-serif;
+  left: calc(50% - 2.5ch);
 }
 
 .timeline:after {
@@ -259,6 +248,7 @@ button:hover {
   color: var(--color-accent);
   font-weight: bold;
   font-family: Helvetica, sans-serif;
+  left: calc(50% - 2ch);
 }
 
 .timeline-entry {
@@ -267,6 +257,9 @@ button:hover {
   position: relative;
   left: 1.2em;
   /*border: 3px solid var(--color-accent);;*/
+  width: 16em;
+  left: 0;
+  flex: 0 1 auto;
 }
 
 .timeline-entry::after {
@@ -279,6 +272,30 @@ button:hover {
   background: var(--color-accent);
   border: 5px solid var(--color-background-left);
   border-radius: 10em;
+}
+
+.timeline-entry.right {
+  align-self: flex-end;
+  margin-right: 4em;
+}
+
+.timeline-entry.left {
+  align-self: flex-start;
+  margin-left: 4em;
+}
+
+.timeline-entry::after {
+  border: 5px solid var(--color-background-middle);
+}
+
+.timeline-entry.right::after {
+  left: unset;
+  right: calc(100% + 3em - 10px);
+}
+
+.timeline-entry.left::after {
+  left: calc(100% + 2em - 10px);
+  background: var(--color-accent);
 }
 
 .tl-title {
@@ -327,8 +344,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   padding: 1.875em;
-  background-color: #f4f0eb;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);
+  /*background-color: #f4f0eb;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0.2, 0.2, 0.2, 1);*/
 }
 
 .cube_face > .cubeimg {
@@ -440,17 +457,67 @@ button:hover {
 
 /*Code*/
 
-/*Mobile 768px*/
-@media (min-width: 768px) {
-  /********* Wrapper ********/
+/*Surface Pro 912*/
+@media (max-width: 912px) {
+  .wrapper {
+    height: 210vh;
+  }
+
+  .page {
+    margin: 0 auto 1.5em 6.8em;
+    width: 75vw;
+    height: 170vh;
+  }
+
+  .tc-container {
+    height: 40vh;
+  }
+
+  .timeline-entry.right {
+    margin-right: 1.5em;
+  }
+
+  .timeline-entry.left {
+    margin-left: 1.5em;
+  }
+}
+
+/*IPad 820px*/
+@media (max-width: 820px) {
   .wrapper {
     height: 290vh;
   }
 
   .page {
     margin: 0 auto 1.5em 6.8em;
-    width: 65vw;
+    width: 75vw;
     height: 250vh;
+  }
+
+  .tc-container {
+    height: 50vh;
+  }
+
+  .timeline-entry.right {
+    margin-right: 1.5em;
+  }
+
+  .timeline-entry.left {
+    margin-left: 1.5em;
+  }
+}
+
+/*Mobile 768px*/
+@media (max-width: 768px) {
+  /********* Wrapper ********/
+  .wrapper {
+    height: 430vh;
+  }
+
+  .page {
+    margin: 0 auto 1.5em 6.8em;
+    width: 75vw;
+    height: 390vh;
   }
   #timeline {
     display: none;
@@ -512,40 +579,26 @@ button:hover {
     margin-right: 0.3em;
   }
 
-  #cv {
-    justify-content: flex-start;
-  }
-
   .timeline {
-    width: 36em;
-    flex: 1 1 auto;
-    max-height: 300vh;
-    gap: 0;
-    justify-content: space-around;
-    background: linear-gradient(#5f5747, #5f5747) no-repeat center / 4px 100%;
-    border: none;
+    background: none;
   }
 
-  .timeline::before {
-    left: calc(50% - 2.5ch);
+  .timeline:before {
+    display: none;
   }
 
-  .timeline::after {
-    left: calc(50% - 2ch);
-  }
-
-  .timeline-entry {
-    width: 16em;
-    left: 0;
-    flex: 0 1 auto;
+  .timeline:after {
+    display: none;
   }
 
   .timeline-entry.right {
-    align-self: flex-end;
+    align-self: center;
+    margin: 0;
   }
 
   .timeline-entry.left {
-    align-self: flex-start;
+    align-self: center;
+    margin: 0;
   }
 
   .timeline-entry::after {
@@ -560,5 +613,9 @@ button:hover {
   .timeline-entry.left::after {
     left: calc(100% + 2em - 10px);
     background: var(--color-accent);
+  }
+
+  .tl-description {
+    margin-bottom: 2em;
   }
 }
